@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>IESAAN ENERGY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  th {
+    background-color: blue;
+    color: white;
+  }
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  .row-bottom-margin { margin-bottom:0px !important; }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Iesaan Energy</a>
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
+        <li><a href="#clients">CLIENTS</a></li>
+        <li><a href="#careers">CAREERS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- Call to Action Well -->
+<div class="container-fluid">
+  <h2>IESAAN ENERGY</h2>
+  <h3>COMPANY PROFILE</h3>
+  <p>Established in the year 2007, we <strong>IESAAN ENERGY</strong>,&nbsp;engaged in manufacturing and exporting a wide range of Industrial Noise Control Products such as Acoustic Enclosures, Silencers etc. We manufacture these products using superior quality raw material that is procured from the reliable vendors of the market. Being highly durable and superlative in quality, these products are extensively used in Industrial &amp; commercial sector. We scrutinize our range on every step of production and also conduct third party inspection from some of the renowned agencies such as LLOYDS, BVIS, DNV and TUV. Further, to suit the specific requirements of our client's, we also offer customization facilities.</p>
+
+
+<div class="container-fluid">
+  <table class="table table-condensed">
+    <tbody>
+      <thead>
+      <tr>
+        <th>Basic Information</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tr>
+        <td>Business Type</td>
+        <td>Manufacturer</td>
+      </tr>
+      <thead>
+      <tr>
+        <th>Ownership and Capital</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tr>
+        <td>Year of Establishment</td>
+        <td>2007</td>
+      </tr>
+      <tr>
+        <td>Ownership Type</td>
+        <td>Proprietary  company</td>
+      </tr>
+    <thead>
+      <tr>
+        <th>Type and Market</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tr>
+        <td>Major Markets</td>
+        <td>Indian Subcontinent</td>
+      </tr>
+      <tr>
+        <td>Annual Turnovers</td>
+        <td>2014-15 Rs.35 lacs, 2015-16 Rs.42 lacs, 2016-17 Rs.48 lacs</td>
+      </tr>
+      <thead>
+        <tr>
+          <th>Quality &amp; Certification
+</th>
+          <th></th>
+        </tr>
+      </thead>
+        <tr>
+          <td>Trade Memberships</td>
+          <td>SSI, NSIC</td>
+        </tr>
+        <thead>
+          <tr>
+            <th>Team &amp; Staffs
+
+  </th>
+            <th></th>
+          </tr>
+        </thead>
+          <tr>
+            <td>Total number of employees</td>
+            <td>15 People</td>
+          </tr>
+          <thead>
+            <tr>
+              <th>Statutory Profile
+
+
+    </th>
+              <th></th>
+            </tr>
+          </thead>
+            <tr>
+              <td>Banker</td>
+              <td>Punjab National Bank</td>
+            </tr>
+            <tr>
+              <td>PAN</td>
+              <td>AVUPM8387R</td>
+            </tr>
+            <tr>
+              <td>Registration Authority</td>
+              <td>Directorate Of Small Scale Industry</td>
+            </tr>
+            <tr>
+              <td>Registration No</td>
+              <td>3301511/01075-E Part-II</td>
+            </tr>
+            <tr>
+              <td>Central Sales tax No</td>
+              <td>927400</td>
+            </tr>
+            <tr>
+              <td>TIN No. / VAT No</td>
+              <td>33963563974</td>
+            </tr>
+            <thead>
+              <tr>
+                <th>Safety Policy
+
+      </th>
+                <th></th>
+              </tr>
+            </thead>
+              <tr>
+                <td colspan="2"><p>"Improving safety culture is the responsibility of everyone of us and we all have a contribution towards that. Every accident is avoidable and by working together we will protect ourselves and others".</p></td>
+              </tr>
+              <thead>
+                <tr>
+                  <th>Product Portfolio
+
+        </th>
+                  <th></th>
+                </tr>
+              </thead>
+                <tr>
+                  <td colspan="2"><p>We are one of the established names engaged in manufacturing and exporting a wide range of Industrial Noise Control Products such as Acoustic Enclosures and Silencers etc. We design these products in compliance with the relevant standards and manufactured these using quality tested raw material to ensure optimum functioning and durability. Available in various customized sizes and specifications, these products are widely appreciated by our clients for application specific designs hence, are extensively used in various industrial sectors such as Steel, Power, Oil &amp; Gas, Petrochemicals, Fertilizers &amp; Automotive Engineering etc.</p></td>
+                </tr>
+                <tr>
+                  <td>Silencers</td>
+                  <td><ul>
+                  <li>Vent Silencers</li>
+                  <li>Suction Silencers</li>
+                  <li>Discharge Silencer</li>
+                  <li>Exhaust Silencer</li>
+                  <li>Stack Silencer</li>
+                  <li>Blow Off Silencer</li>
+                  <li>HVAC Silencer</li>
+                  <li>Separator Silencer</li>
+                  <li>DG Engine Exhaust Silencers</li>
+                  <li>Duct Silencer</li>
+                  </ul></td>
+                </tr>
+                <tr>
+                  <td>Industrial Fans</td>
+                  <td><ul>
+                  <li>Axial</li>
+                  <li>Centrifugal</li></ul></td>
+                </tr>
+                <thead>
+                  <tr>
+                    <th>Salient Features
+
+          </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                  <tr>
+                    <td><ul>
+                    <li>Application specific design</li>
+                    <li>Optimum performance</li>
+                  <li>Precision engineered
+</li>
+                <li>Sturdy construction
+</li></ul></td>
+                  </tr>
+                  <thead>
+                    <tr>
+                      <th>Silencers Used for
+
+            </th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                    <tr>
+                      <td><p>To attenuate vent noise from Boilers, Turbines, blowers and compressors.</p></td>
+                    </tr>
+                    <thead>
+                      <tr>
+                        <th>Acoustic Enclosures Used for
+
+              </th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                      <tr>
+                        <td><ul>
+                        <li>Compressor</li>
+                        <li>Gas / steam Turbines</li>
+                      <li>Generators</li>
+                    <li>Blowers</li>
+                  <li>Any noisy machine</li>
+                <li>DG Acoustic Enclosures</li></ul></td>
+                      </tr>
+                      <thead>
+                        <tr>
+                          <th>Turnkey solutions for Noise Control in
+
+                </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                        <tr>
+                          <td><ul>
+                          <li>Power Plant</li>
+                          <li>Refinery / Petrochemicals</li>
+                          <li>Fertilizer</li>
+                          <li>Steel plants</li>
+                          <li>Engineering industries</li></ul></td>
+                        </tr>
+    </tbody>
+  </table>
+</div>
+
+<table width="421">
+<tbody>
+
+<p><strong><em>Application Areas</em></strong></p>
+<p>With the help our advanced manufacturing facilities, we are able to offer an application specific range of Industrial Noise Control Products. Being sturdy in construction and optimum in quality, these products are highly demanded by our clients in domestic as well as international market.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong><em>Our range finds applications in following areas:</em></strong></p>
+<ul>
+<li>Steel sector</li>
+<li>Power plants</li>
+<li>Oil and gas industry</li>
+<li>Fertilizers industry</li>
+<li>Petrochemical refineries</li>
+<li>Automobile Engineering</li>
+<li>Engineering</li>
+</ul>
+<p><strong><em>Engineering Capabilities</em></strong></p>
+<p>Our engineering capabilities lie in the expertise of our engineers, who have years of experience in this domain. Their in-depth knowledge of sales, marketing, designing, contracts, material, manufacturing, QA/QC and field services department has provided us an edge over our competitors.</p>
+<p>With their relentless and dedicated efforts, we are able to undertake and execute several multidisciplinary turnkey engineering projects involving civil, electrical, mechanical, instrumentation etc. To help them in their working, we have installed latest software for drafting, 3-D modeling &amp; stress analysis and developed a network of more than 20 computers managed by servers.</p>
+<p><strong><em>Our Infrastructure</em></strong></p>
+<p>In order to cater our clients with a quality range of Noise Control Equipments, we are well equipped with state-of-the-art technology and sophisticated machines.</p>
+<p>Following are the resources and facilities equipped at our infrastructure:</p>
+<ul>
+<li>We have manufacturing facilities for fabricating all types of steel such as carbon steel, stainless steel, alloy steel, utilizing various insulation material such as rock wool, ceramic wool etc, welding and painting including large work areas for fabrication of large structures and equipments.</li>
+<li>We have conventional facilities like rolling, bending, punching, shearing, blasting and painting facilities.</li>
+<li>We use a qualified work force for fabrication. We have around 8 qualified welders qualified in various positions and different combination of material.</li>
+<li>We have qualified personnel in various levels in NDT.</li>
+<li>A detailed description of our facility is given below for ready reference.</li>
+</ul>
+<p><strong><em>Factory Area:</em></strong></p>
+<ul>
+<li>Total Area:25,000 Square feet</li>
+<li>Covered area: 10,000 Square feet + 4,000 Square feet under construction</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong><em>Our Infrastructure List of Machineries:</em></strong></p>
+<p><strong>&nbsp;</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="43">
+<p><strong>S.NO</strong></p>
+</td>
+<td width="217">
+<p><strong>DESCRIPTION</strong></p>
+</td>
+<td width="163">
+<p><strong>QUANTITY (NOS)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>1</p>
+</td>
+<td width="217">
+<p>Arc Welding Rectifier/Inverter</p>
+</td>
+<td width="163">
+<p><strong>4</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>2</p>
+</td>
+<td width="217">
+<p>Arc Welding Transformer</p>
+</td>
+<td width="163">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>3</p>
+</td>
+<td width="217">
+<p>Pillar Type Drilling Machine</p>
+</td>
+<td width="163">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>4</p>
+</td>
+<td width="217">
+<p>Portable Grinding Machine</p>
+</td>
+<td width="163">
+<p><strong>3</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>5</p>
+</td>
+<td width="217">
+<p>TIG Torch and its Accessories</p>
+</td>
+<td width="163">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>6</p>
+</td>
+<td width="217">
+<p>Pedestal Grinding Machine</p>
+</td>
+<td width="163">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>7</p>
+</td>
+<td width="217">
+<p>Compressor with Spray Nozzle for Painting</p>
+</td>
+<td width="163">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>8</p>
+</td>
+<td width="217">
+<p>Spot Welding Machine</p>
+</td>
+<td width="163">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>9</p>
+</td>
+<td width="217">
+<p>PUG Cutting Machine</p>
+</td>
+<td width="163">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>10</p>
+</td>
+<td width="217">
+<p>CO2 Welding Machine</p>
+</td>
+<td width="163">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>11</p>
+</td>
+<td width="217">
+<p>Plasma Cutting machine</p>
+</td>
+<td width="163">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>12</p>
+</td>
+<td width="217">
+<p>Riveting Gun</p>
+</td>
+<td width="163">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>13</p>
+</td>
+<td width="217">
+<p>5 MT Capacity EOT Crane</p>
+</td>
+<td width="163">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>14</p>
+</td>
+<td width="217">
+<p>10 MT Capacity EOT Crane</p>
+</td>
+<td width="163">
+<p>2(Under Installation)</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>15</p>
+</td>
+<td width="217">
+<p>50 MT Capacity Power Press</p>
+</td>
+<td width="163">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>16</p>
+</td>
+<td width="217">
+<p>Shearing Machine</p>
+</td>
+<td width="163">
+<p>6 mm x 2500 mm width</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>17</p>
+</td>
+<td width="217">
+<p>Press Brake / Folding Machine</p>
+</td>
+<td width="163">
+<p>6 mm x 2500 mm width</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>18</p>
+</td>
+<td width="217">
+<p>100 MT capacity CNC Press Brake</p>
+</td>
+<td width="163">
+<p>4 mm x 3100 mm width</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>19</p>
+</td>
+<td width="217">
+<p>Plate Rolling Machine</p>
+</td>
+<td width="163">
+<p>10mm x 1600mm width</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>20</p>
+</td>
+<td width="217">
+<p>Mobile crane</p>
+</td>
+<td width="163">
+<p>15MT &amp; 25MT capacity(with three boom)</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>21</p>
+</td>
+<td width="217">
+<p>Sand/Shot blasting</p>
+</td>
+<td width="163">
+<p>1 set</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>21</p>
+</td>
+<td width="217">
+<p>Electrode Baking oven</p>
+</td>
+<td width="163">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="43">
+<p>22</p>
+</td>
+<td width="217">
+<p>Portable Electrode Baking oven</p>
+</td>
+<td width="163">
+<p><strong>4</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><em>Our Team</em></strong></p>
+<p>Supported by a dedicated team of professionals, we have emerged as a distinguished manufacturer and exporter of Industrial Noise Control Products. Our team enables us to undertake several industrial noise control projects and with over 300 installations for different industries. These professionals have expertise in solving any kind of problem related to the industrial noise and executing the projects in most significant manner.</p>
+<p><strong><em>Our team comprises:</em></strong></p>
+<ul>
+<li>Engineers - Managers &amp; General Managers</li>
+<li>Technicians</li>
+<li>Qualified welders</li>
+<li>Research and development experts</li>
+<li>Dedicated work force</li>
+</ul>
+<p><strong><em>For handling turnkey projects, we have dedicated team.<br /> <br /> </em></strong></p>
+<p><strong><em>Quality Assurance</em></strong></p>
+<p>Being an initiator to ISO 9001 certification, we lay great emphasis on maintaining well documented quality system and procedures in our operations. We follow advanced manufacturing techniques and scrutinize our range of Industrial Noise Control Products on well defined quality parameters. Further, to ascertain optimum quality, we also conduct third party inspection by various reputed agencies in the market.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><em>We conduct following non-destructive tests on our range:</em></strong></p>
+<ul>
+<li>NDT &ndash; LPI, UT, RT</li>
+<li>Hydro test and Pneumatic test</li>
+<li>PMI</li>
+</ul>
+<p><strong><em>Measuring and Testing Equipment:</em></strong></p>
+<p><strong>&nbsp;</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="47">
+<p><strong>SI. NO.</strong></p>
+</td>
+<td width="156">
+<p><strong>DESCRIPTION</strong></p>
+</td>
+<td width="134">
+<p><strong>QUANTITY (NOS)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1</p>
+</td>
+<td width="156">
+<p>Sound Level Meters</p>
+</td>
+<td width="134">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>2</p>
+</td>
+<td width="156">
+<p>Hydro Testing Assembly</p>
+</td>
+<td width="134">
+<p><strong>1</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>3</strong></p>
+</td>
+<td width="156">
+<p>Vernier Caliper</p>
+</td>
+<td width="134">
+<p><strong>2</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>4</strong></p>
+</td>
+<td width="156">
+<p>Fillet Gauges</p>
+</td>
+<td width="134">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>5</strong></p>
+</td>
+<td width="156">
+<p>Pressure Gauges</p>
+</td>
+<td width="134">
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Third Party Inspection</em></strong></p>
+<p><br /> Being a renowned manufacturer and exporter of a wide range of Noise Control Equipment, we consistently strive to follow stringent quality testing measures. Therefore, we test these products using advanced testing equipment and arrange for third party inspection from the distinguished agencies in the market.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><em>Our range is tested by following reputed agencies:</em></strong></p>
+<ul>
+<li>LLOYDS</li>
+<li>BVIS</li>
+<li>DNV</li>
+<li>TUV</li>
+<li>TATA projects</li>
+</ul>
+<p><strong><em>Partial list of customers:</em></strong></p>
+<ul>
+<li>Goa Sponge &amp; power Ltd, Goa- Mr.Suraj-0832-2659363.</li>
+<li>Mawana Sugars Ltd,Meerut- Mr.Rathoyi/ 01233-275212</li>
+<li>Nirma Ltd, Bhavanagar- Mr.V.N.Desai/079-27546565.</li>
+<li>DSCL, Delhi- Mr.Anil Bisht/ 011-23356319.</li>
+<li>Hindalco, Orissa</li>
+<li>Thermodyne Technologies Ltd,Chennai- Mr. Sivadasan /044-22437201.</li>
+<li>Saurashtra Chemicals Ltd,Porbandar- Mr.V.N.Desai/079-27546565.</li>
+<li>Ambuja Cements Ltd,Kodinar- Mr.Bipin Dubey/027952-32120</li>
+<li>Kamachi Sponge and Power Ltd, Chennai &ndash; 044-37900907</li>
+<li>Reliance Industries Ltd, Surat &ndash; 0261-4135753</li>
+<li>Essar Oil Ltd, Jamnagar- 02833-661444</li>
+<li>Madras Fertilizers Ltd, Chennai-044-25941001</li>
+<li>Ambuja Cements Ltd, Chandrapur-07173-240015</li>
+<li>Renuka Sugars Ltd.-09561230002</li>
+<li>Ishedhu Speciality chemicals Ltd.</li>
+<li>M/s Ansoldo Caldie Boilers Ltd, Chennai, Mr.R.Amudhakumar / 9940635495</li>
+<li>Nillachal Ispat Nigam Ltd, Orissa</li>
+<li>M/s .Tata Projects Ltd</li>
+<li>M/s.Walchandnagar Industries Ltd</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong><em>Trade Shows we Participate</em></strong></p>
+<p><br /> We have participated in the following trade shows in the year &nbsp;&nbsp;2011-2012</p>
+<ul>
+<li>Powergen India &amp; Central Asia 2011, New Delhi, India</li>
+<li>Synergy Expo 2011, Hyderabad, India</li>
+<li>Tech Ex 2011, Coimbatore, India</li>
+<li>Energy Ex 2011, Gujarat, India</li>
+</ul>
+<p>Please remember <strong>IESAAN ENERGY</strong> is the noise control experts. Your requirement is our challenge. We invite you to avail our best quality and prompt services always.</p>
+<p>&nbsp;</p>
+<p><strong><em>Yours Truly,</em></strong></p>
+<p><strong><em>Vijaia Mohandass</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright 2017 - All Rights Reserved - <a href="https://www.iesaanenergy.in" title="Iesaan Energy">www.iesaanenergy.in</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
